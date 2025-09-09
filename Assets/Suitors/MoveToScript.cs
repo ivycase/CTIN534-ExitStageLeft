@@ -17,6 +17,6 @@ public class MoveToScript : MonoBehaviour
 
     void Start()
     {
-        transform.DOMove(targetPosition, moveDuration).SetEase(Ease.OutBack);
+        transform.DOMove(targetPosition, moveDuration).SetEase(Ease.InBack);
     }
 }
