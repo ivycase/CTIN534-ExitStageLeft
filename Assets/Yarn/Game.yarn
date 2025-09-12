@@ -1,0 +1,218 @@
+﻿title: Game
+---
+//<<close Curtains>>
+<<wait 5.0>>
+<<play Audio GeorgePhoneEdit>>
+//<<enable Phone>>
+<<next_choice Phone Intrologue>>
+<<wait 10.0>>
+<<play Audio GeorgePhoneEdit>>
+<<wait 20.0>>
+<<play Audio GeorgePhoneEdit>>
+<<wait 5.0>>
+You should probably click on the phone.
+===
+
+title: Intrologue
+---
+//<<open Curtains>>
+Hey! Long time no see!
+
+I know things haven't been the greatest since Liza... 
+you know...
+
+But it's high time you got back out there!
+
+There's only so many fish in the sea, and fish that like Shakespeare?
+Even Less!
+
+So I took the liberty of setting up your profile and planning some dates. 
+You can thank me later!
+
+I didn't think you'd get so many responses, especially not after that bio you sent me.
+
+"I'm only me when I'm acting?" 
+
+I know you're a thespian at heart but that just makes my skin crawl!
+
+But apparently that's just me! 
+
+Being the strapping individual you are, we got a LOT of interested parties. 
+
+Congrats!
+
+The only issue is, I'm not qualified to tell if they're really Shakespeare fans or not. 
+
+Only you can do that part!
+
+On that note, if your suitors say or do anythign that you think only a fake Shakespeare fan would do,
+all you gotta do is point it out.
+
+I'll handle the rest.
+
+Good luck buddy!
+
+Oh, and I know it's hard not to think of Liza in these times, 
+but she'd want you to be happy.
+
+Trust me. 
+
+<<wait 2.0>>
+<<jump Mono_One>>
+===
+
+title: Mono_One
+---
+//<<disable Curtains>>
+//<<close Curtains>>
+<<wait 2.0>>
+<<play Audio Sam1_Outside_Auditorium>>
+She should have died hereafter.
+<<wait 0.5>>
+There would have been a time for such a word.
+<<wait 0.5>>
+Tomorrow, and tomorrow, and tomorrow,
+Creeps in this petty pace from day to day,
+To the last syllable of recorded time;
+And all our yesterdays have lighted fools
+The way to dusty death. 
+<<wait 0.25>>
+Out, out brief candle.
+Life's but a walking shadow, a poor player
+That struts and frets his out upon the stage,
+And then is heard no more. It is a tale 
+Told by an idiot, full of sound and fury,
+Signifying nothing. 
+<<wait 2.0>>
+//<<change_sprite SuitorSprite CharacterOne>>
+//<<open Curtains>>
+<<next_choice Phone Choice_One>>
+//<<enable Curtains>>
+<<jump Phone_D1>>
+
+title: Choice_One
+---
+//<<disable Phone>>
+-> Real.
+    I thought so too! But it's too soon to stop here. I'll send the next one out. 
+-> Fake.
+    Huh, really? Well shows what I know! But don't get disappointed, there's still more to come! We'll find your thespian bride yet!
+<<jump Mono_Two>>
+===
+
+title: Phone_D1
+---
+//<<disable Phone>>
+The Scottish play, huh? A bit sullen for a date if you ask me, but I think he played it well!
+Wasn't Liza in a production once? 
+She would've made a great Lady Macbeth.
+Anyway...
+Let me know what you thought!
+//<<enable Phone>>
+===
+
+title: Mono_Two
+---
+//<<disable Curtains>>
+//<<close Curtains>>
+<<wait 2.0>>
+<<play Audio Bernice2_Outside_Auditorium_TheyPreished>>
+If by your art, my dearest father, you have
+put the wild waters in this roar, allay them.
+The sky, it seems, would pour down
+stinking pitch
+<<wait 0.25>>
+But that the sea, mounting to th’ welkin’s
+cheek,
+Dashes the fire out. 
+<<wait 0.25>>
+O, I have suffered
+with those that I saw suffer – a brave
+vessel
+(Who had no doubt some noble creature in her)
+Dashed all to pieces. 
+<<wait 0.5>>
+O, the cry did knock against my very heart!
+<<wait 0.5>>
+Poor souls,
+<<wait 0.5>>
+they perished.
+<<wait 2.0>>
+//<<change_sprite SuitorSprite CharacterTwo>>
+//<<open Curtains>>
+<<next_choice Phone Choice_Two>>
+//<<enable Curtains>>
+<<jump Phone_D2>>
+
+title: Choice_Two
+---
+//<<disable Phone>>
+-> Real.
+    Right!? It's hard to find that same raw talent in someone new, but she's got promise! But before you make your decision, I've got a few more for you to meet. Ready?
+-> Fake.
+    Oh, that's too bad. She's no Liza but I thought she was pretty good! But don't worry, the search isn't over. Ready for the next one? 
+<<jump Mono_Three>>
+===
+
+title: Phone_D2
+---
+//<<disable Phone>>
+A bit uppity, but I've heard worse Mirandas. I'd give her a pass.
+Watcha think?
+//<<enable Phone>>
+===
+
+title: Mono_Three
+---
+//<<disable Curtains>>
+//<<close Curtains>>
+<<wait 2.0>>
+<<play Audio YanranAnna_Radio_WarmVoice>>
+If we shadows have offended,
+Think but this, and all is mended,
+That you have but slumber’d here
+While these visions did appear.
+And this weak and idle theme,
+Gentles, do not reprehend:
+if you pardon, we will mend...
+<<play MendRepeatingLoud>>
+//<<change_sprite SuitorSprite InvisibleSprite>>
+//<<open Curtains>>
+<<wait 2.0>> 
+O, that this too too solid flesh would melt
+<<wait 0.5>>
+Thaw and resolve itself into a dew!
+<<wait 0.5>>
+Or that the Everlasting had not fix’d
+<<wait 0.5>>
+His canon ‘gainst self-slaughter!
+<<wait 0.5>>
+O God!
+<<wait 1.0>>
+God!
+<<wait 2.0>>
+<<next_choice Phone Choice_Three>>
+<<jump Phone_D3>>
+
+title: Choice_Three
+---
+<<disable Phone>>
+-> Real.
+    Glad you thought so! Ready for the next one? 
+-> Fake.
+    I'm sorry to hear that. But let it get to you, we've got a few more stars to meet! I have a good feeling about this next one.
+<<jump Mono_Four>>
+===
+
+title: Phone_D3
+---
+<<disable Phone>>
+<<wait 2.0>>
+Hey, buddy.
+<<wait 1.0>>
+You there? I lost you for a second.
+There was some sort of static over the phone, 
+so I didn't quite catch the end there. 
+I'll leave this one up to you. 
+<<enable Phone>>
+===
