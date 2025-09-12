@@ -2,6 +2,7 @@
 ---
 //<<auto DialogueSystem true>>
 <<close Curtains>>
+<<open Curtains>>
 <<wait 5.0>>
 <<play Audio GeorgePhoneEdit>>
 <<enable Phone>>
@@ -17,7 +18,6 @@ You should probably click on the phone.
 title: Intrologue
 ---
 <<disable Phone>>
-<<open Curtains>>
 //<<auto DialogueSystem false>>
 Hey! Long time no see!
 I know things haven't been the greatest since Liza...  you know...
@@ -46,7 +46,7 @@ title: Mono_One
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_One>>
-<<wait 2.0>>
+//<<wait 2.0>>
 <<play Audio Sam1_Outside_Auditorium>>
 "Tomorrow, and tomorrow, and tomorrow."
 //<<wait 29.609>>
@@ -135,7 +135,7 @@ title: Mono_Three
 //<<wait 23.030>>
 <<stop Audio YanranAnna_Radio_WarmVoicewav>>
 //<<wait 2.803>>
-<<play Audio MendRepeatingLoud>>
+<<play Audio MendRepeatingQuiet>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
 <<open Curtains>>
 <<wait 2.0>> 

@@ -1977,6 +1977,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   dialogueText: {fileID: 1815100488}
   monologueText: {fileID: 602008140}
+  targetSprite: {fileID: 1937177460}
+  curtainsOpen: {fileID: 21300000, guid: 3a952b51458096b4c90e6e7317489a0d, type: 3}
+  curtainsClosed: {fileID: 21300000, guid: 0a9db79afc3352247ac3de46b5a31f6e, type: 3}
 --- !u!1 &1287299340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2799,6 +2802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1937177459}
   - component: {fileID: 1937177460}
+  - component: {fileID: 1937177461}
   m_Layer: 0
   m_Name: Curtains-Framing
   m_TagString: Untagged
@@ -2879,6 +2883,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1937177461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937177458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df1f4491497bf4b4aaaf82546dea7f4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &2104779989
 GameObject:
   m_ObjectHideFlags: 0
