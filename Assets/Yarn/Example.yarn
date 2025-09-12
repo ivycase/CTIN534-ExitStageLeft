@@ -1,0 +1,36 @@
+﻿Mono_Example: 
+---
+<<next_monologue Mono_Example>>
+<<close Curtains>>
+<<wait 2.0>>
+<<play Audio FileName>>
+This is the first line.
+<<wait 2.0>>
+This is the second line.
+<<wait 2.0>>
+This is the third line.
+<<wait 2.0>>
+<<change_sprite SuitorSprite CharacterName>>
+<<open Curtains>>
+<<next_choice Phone Choice_Example>>
+<<jump Dialogue_Example>>
+===
+
+Choice_Example:
+---
+<<disable Phone>>
+-> Real.
+	This is Phone Guy's response. Is the player right? Wrong?
+-> Fake.
+	This is Phone Guy's other response. Is the player right? Wrong?
+<<jump Mono_Example>>
+===
+
+Dialogue_Example:
+---
+<<disable Phone>>
+This is text. I think there should only be a few lines.
+Lorem ipsom dolor sit amet.
+That's fake latin, you know.
+<<enable Phone>>
+===
