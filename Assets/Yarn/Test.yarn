@@ -1,0 +1,42 @@
+﻿title: Suitor_Test
+---
+Phoney: [bounce]FUCK MONEY DIAMONDS AND BITCHES DONT NEED EM[/bounce]
+<<detour Test_Monologue>>
+//<<set_suitor Tester>>
+Tester: hi
+Tester: i like the color of your window sill
+===
+
+title: Test_Monologue
+---
+//<set_curtains True>
+<<play Audio Test>>
+no more; and by a sleep to say we end
+<<wait 2>>
+the heart-ache and the thousand natural shocks
+<<wait 2>>
+that flesh is heir to 'tis a consummation
+<<wait 2>>
+//<set_curtains False>
+===
+
+title: Suitor_Test_2
+---
+<<detour Test_Monologue>>
+//<<set_suitor Tester2>>
+Tester2: ive hearda shakespeare
+Tester2: she's mid
+===
+
+title: Test_Monologue_2
+---
+//<set_curtains True>
+//<<monologue Test>>
+heat from fire
+<<wait 1>>
+fire from heat
+<<wait 1>>
+sunlight. raindrops. air.
+<<wait 1>>
+//<set_curtains False>
+===
