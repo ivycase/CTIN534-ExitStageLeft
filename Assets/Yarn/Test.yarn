@@ -1,7 +1,7 @@
 ﻿title: Suitor_Test
 ---
+<<next_monologue Curtains Test_Monologue>>
 Phoney: [bounce]FUCK MONEY DIAMONDS AND BITCHES DONT NEED EM[/bounce]
-<<detour Test_Monologue>>
 //<<set_suitor Tester>>
 Tester: hi
 Tester: i like the color of your window sill
@@ -18,6 +18,7 @@ the heart-ache and the thousand natural shocks
 that flesh is heir to 'tis a consummation
 <<wait 2>>
 //<set_curtains False>
+<<next_choice Phone Test_Monologue_2>>
 ===
 
 title: Suitor_Test_2

@@ -11,7 +11,7 @@ public class YarnOnClickScript : MonoBehaviour
 
     [SerializeField]
     [Tooltip("Name of the Yarn node to play.")]
-    private string nodeName;
+    public string nodeName;
     #endregion
 
     #region Cached Components

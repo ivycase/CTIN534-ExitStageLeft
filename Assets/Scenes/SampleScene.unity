@@ -619,7 +619,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.99975187
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -1363,10 +1363,11 @@ GameObject:
   - component: {fileID: 1132406885}
   - component: {fileID: 1132406884}
   - component: {fileID: 1132406883}
-  - component: {fileID: 1132406886}
   - component: {fileID: 1132406887}
+  - component: {fileID: 1132406888}
+  - component: {fileID: 1132406886}
   m_Layer: 5
-  m_Name: SelectorButton
+  m_Name: Curtains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1498,7 +1499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   dialogueRunner: {fileID: 1575280880}
-  nodeName: Test_Monologue
+  nodeName: Suitor_Test
 --- !u!61 &1132406887
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1545,6 +1546,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1132406888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132406881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 465f92011bcf6ca4598d151605a5ac9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1387383540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,8 +1645,10 @@ GameObject:
   - component: {fileID: 1400224273}
   - component: {fileID: 1400224272}
   - component: {fileID: 1400224271}
+  - component: {fileID: 1400224275}
+  - component: {fileID: 1400224274}
   m_Layer: 5
-  m_Name: ReplayButton
+  m_Name: Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1740,6 +1755,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400224269}
   m_CullTransparentMesh: 1
+--- !u!114 &1400224274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400224269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec62e88b6d5fb947b51cd7c982150e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!114 &1400224275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400224269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21fbb692f590c14194007ee5bf5874a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YarnOnClickScript
+  dialogueRunner: {fileID: 1575280880}
+  nodeName: Suitor_Test_2
 --- !u!1 &1443345906
 GameObject:
   m_ObjectHideFlags: 0
