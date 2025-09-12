@@ -1,22 +1,24 @@
-﻿Mono_Example: 
+﻿title: Mono_Example 
 ---
 <<next_monologue Mono_Example>>
+<<disable Curtains>>
 <<close Curtains>>
-<<wait 2.0>>
+<<wait 2>>
 <<play Audio FileName>>
 This is the first line.
-<<wait 2.0>>
+<<wait 2>>
 This is the second line.
-<<wait 2.0>>
+<<wait 2>>
 This is the third line.
-<<wait 2.0>>
+<<wait 2>>
 <<change_sprite SuitorSprite CharacterName>>
 <<open Curtains>>
 <<next_choice Phone Choice_Example>>
+<<enable Curtains>>
 <<jump Dialogue_Example>>
 ===
 
-Choice_Example:
+title: Choice_Example
 ---
 <<disable Phone>>
 -> Real.
@@ -26,7 +28,7 @@ Choice_Example:
 <<jump Mono_Example>>
 ===
 
-Dialogue_Example:
+title: Dialogue_Example
 ---
 <<disable Phone>>
 This is text. I think there should only be a few lines.
