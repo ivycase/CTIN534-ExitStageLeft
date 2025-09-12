@@ -4,17 +4,22 @@ using Yarn.Unity;
 
 public class CloseOpenCurtainsScript : MonoBehaviour
 {
-    public TextMeshPro monologueText;
+    public GameObject dialogueText;
+    public GameObject monologueText;
 
     [YarnCommand("open")]
     public void OpenCurtains()
     {
-        monologueText.enabled = false;
+        dialogueText.GetComponent<TextMeshProUGUI>().text = "";
+        monologueText.GetComponent<CanvasRenderer>().SetAlpha(0);
+        dialogueText.GetComponent<CanvasRenderer>().SetAlpha(1);
     }
 
     [YarnCommand("close")]
     public void CloseCurtains()
     {
-        monologueText.enabled = true;
+        monologueText.GetComponent<TextMeshProUGUI>().text = "";
+        monologueText.GetComponent<CanvasRenderer>().SetAlpha(1);
+        dialogueText.GetComponent<CanvasRenderer>().SetAlpha(0);
     }
 }

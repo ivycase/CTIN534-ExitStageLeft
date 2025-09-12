@@ -17,4 +17,10 @@ public class SoundTriggerScript : MonoBehaviour
         print(string.Format("Clips/{0}", fileName));
         audioSource.PlayOneShot(clip);
     }
+
+    [YarnCommand("stop")]
+    public void StopSound(string fileName)
+    {
+        audioSource.Stop();
+    }
 }

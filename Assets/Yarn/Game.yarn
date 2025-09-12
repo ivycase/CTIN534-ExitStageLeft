@@ -1,9 +1,10 @@
 ﻿title: Game
 ---
-//<<close Curtains>>
+//<<auto DialogueSystem true>>
+<<close Curtains>>
 <<wait 5.0>>
 <<play Audio GeorgePhoneEdit>>
-//<<enable Phone>>
+<<enable Phone>>
 <<next_choice Phone Intrologue>>
 <<wait 10.0>>
 <<play Audio GeorgePhoneEdit>>
@@ -15,84 +16,52 @@ You should probably click on the phone.
 
 title: Intrologue
 ---
-//<<open Curtains>>
+<<disable Phone>>
+<<open Curtains>>
+//<<auto DialogueSystem false>>
 Hey! Long time no see!
-
-I know things haven't been the greatest since Liza... 
-you know...
-
-But it's high time you got back out there!
-
-There's only so many fish in the sea, and fish that like Shakespeare?
-Even Less!
-
+I know things haven't been the greatest since Liza...  you know...
+...but there's only so many fish in the sea, and fish that like Shakespeare? Even less!
 So I took the liberty of setting up your profile and planning some dates. 
-You can thank me later!
-
 I didn't think you'd get so many responses, especially not after that bio you sent me.
-
 "I'm only me when I'm acting?" 
-
-I know you're a thespian at heart but that just makes my skin crawl!
-
+...
 But apparently that's just me! 
-
 Being the strapping individual you are, we got a LOT of interested parties. 
-
-Congrats!
-
 The only issue is, I'm not qualified to tell if they're really Shakespeare fans or not. 
-
 Only you can do that part!
-
-On that note, if your suitors say or do anythign that you think only a fake Shakespeare fan would do,
-all you gotta do is point it out.
-
+If anything about your suitors seems off, all you gotta do is point it out.
 I'll handle the rest.
-
 Good luck buddy!
-
 Oh, and I know it's hard not to think of Liza in these times, 
 but she'd want you to be happy.
-
-Trust me. 
-
-<<wait 2.0>>
+Trust me.
 <<jump Mono_One>>
 ===
 
 title: Mono_One
 ---
-//<<disable Curtains>>
-//<<close Curtains>>
+//<<auto DialogueSystem true>>
+<<close Curtains>>
+<<disable Curtains>>
+<<disable Phone>>
+<<next_monologue Curtains Mono_One>>
 <<wait 2.0>>
 <<play Audio Sam1_Outside_Auditorium>>
-She should have died hereafter.
-<<wait 0.5>>
-There would have been a time for such a word.
-<<wait 0.5>>
-Tomorrow, and tomorrow, and tomorrow,
-Creeps in this petty pace from day to day,
-To the last syllable of recorded time;
-And all our yesterdays have lighted fools
-The way to dusty death. 
-<<wait 0.25>>
-Out, out brief candle.
-Life's but a walking shadow, a poor player
-That struts and frets his out upon the stage,
-And then is heard no more. It is a tale 
-Told by an idiot, full of sound and fury,
-Signifying nothing. 
-<<wait 2.0>>
+"Tomorrow, and tomorrow, and tomorrow."
+//<<wait 29.609>>
+<<stop Audio Sam1_Outside_Auditorium>>
 //<<change_sprite SuitorSprite CharacterOne>>
-//<<open Curtains>>
+<<open Curtains>>
 <<next_choice Phone Choice_One>>
-//<<enable Curtains>>
+<<enable Curtains>>
 <<jump Phone_D1>>
+===
 
 title: Choice_One
 ---
-//<<disable Phone>>
+<<disable Phone>>
+//<<auto DialogueSystem false>>
 -> Real.
     I thought so too! But it's too soon to stop here. I'll send the next one out. 
 -> Fake.
@@ -102,51 +71,40 @@ title: Choice_One
 
 title: Phone_D1
 ---
-//<<disable Phone>>
+<<disable Phone>>
+//<<auto DialogueSystem false>>
+<<wait 2.0>>
 The Scottish play, huh? A bit sullen for a date if you ask me, but I think he played it well!
 Wasn't Liza in a production once? 
 She would've made a great Lady Macbeth.
 Anyway...
 Let me know what you thought!
-//<<enable Phone>>
+<<enable Phone>>
 ===
 
 title: Mono_Two
 ---
-//<<disable Curtains>>
-//<<close Curtains>>
-<<wait 2.0>>
+//<<auto DialogueSystem true>>
+<<next_monologue Curtains Mono_Two>>
+<<close Curtains>>
+<<disable Curtains>>
+<<disable Phone>>
+//<<wait 2.0>>
 <<play Audio Bernice2_Outside_Auditorium_TheyPreished>>
-If by your art, my dearest father, you have
-put the wild waters in this roar, allay them.
-The sky, it seems, would pour down
-stinking pitch
-<<wait 0.25>>
-But that the sea, mounting to th’ welkin’s
-cheek,
-Dashes the fire out. 
-<<wait 0.25>>
-O, I have suffered
-with those that I saw suffer – a brave
-vessel
-(Who had no doubt some noble creature in her)
-Dashed all to pieces. 
-<<wait 0.5>>
-O, the cry did knock against my very heart!
-<<wait 0.5>>
-Poor souls,
-<<wait 0.5>>
-they perished.
-<<wait 2.0>>
+"O, I have suffered."
+//<<wait 32.504>>
+<<stop Audio Bernice2_Outside_Auditorium_TheyPreished>>
 //<<change_sprite SuitorSprite CharacterTwo>>
-//<<open Curtains>>
+<<open Curtains>>
 <<next_choice Phone Choice_Two>>
-//<<enable Curtains>>
+<<enable Curtains>>
 <<jump Phone_D2>>
+===
 
 title: Choice_Two
 ---
-//<<disable Phone>>
+<<disable Phone>>
+//<<auto DialogueSystem false>>
 -> Real.
     Right!? It's hard to find that same raw talent in someone new, but she's got promise! But before you make your decision, I've got a few more for you to meet. Ready?
 -> Fake.
@@ -156,28 +114,30 @@ title: Choice_Two
 
 title: Phone_D2
 ---
-//<<disable Phone>>
+//<<auto DialogueSystem true>>
+<<disable Phone>>
+//<<auto DialogueSystem false>>
 A bit uppity, but I've heard worse Mirandas. I'd give her a pass.
 Watcha think?
-//<<enable Phone>>
+<<enable Phone>>
 ===
 
 title: Mono_Three
 ---
-//<<disable Curtains>>
-//<<close Curtains>>
-<<wait 2.0>>
-<<play Audio YanranAnna_Radio_WarmVoice>>
-If we shadows have offended,
-Think but this, and all is mended,
-That you have but slumber’d here
-While these visions did appear.
-And this weak and idle theme,
-Gentles, do not reprehend:
-if you pardon, we will mend...
-<<play MendRepeatingLoud>>
+//<<auto DialogueSystem true>>
+<<next_monologue Curtains Mono_Three>>
+<<close Curtains>>
+<<disable Curtains>>
+<<disable Phone>>
+//<<wait 2.0>>
+<<play Audio YanranAnna_Radio_WarmVoicewav>>
+"if you pardon, we will mend..."
+//<<wait 23.030>>
+<<stop Audio YanranAnna_Radio_WarmVoicewav>>
+//<<wait 2.803>>
+<<play Audio MendRepeatingLoud>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
-//<<open Curtains>>
+<<open Curtains>>
 <<wait 2.0>> 
 O, that this too too solid flesh would melt
 <<wait 0.5>>
@@ -191,12 +151,16 @@ O God!
 <<wait 1.0>>
 God!
 <<wait 2.0>>
+<<enable Curtains>>
 <<next_choice Phone Choice_Three>>
 <<jump Phone_D3>>
+===
 
 title: Choice_Three
 ---
+//<<auto DialogueSystem true>>
 <<disable Phone>>
+//<<auto DialogueSystem false>>
 -> Real.
     Glad you thought so! Ready for the next one? 
 -> Fake.
@@ -206,6 +170,7 @@ title: Choice_Three
 
 title: Phone_D3
 ---
+//<<auto DialogueSystem true>>
 <<disable Phone>>
 <<wait 2.0>>
 Hey, buddy.
