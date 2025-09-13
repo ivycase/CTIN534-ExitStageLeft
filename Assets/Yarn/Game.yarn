@@ -3,20 +3,23 @@
 //<<auto DialogueSystem true>>
 <<close Curtains>>
 <<open Curtains>>
-<<wait 5.0>>
-<<play Audio GeorgePhoneEdit>>
+<<play Audio CricketsLoopedPropely>>
+Press Spacebar To Move Onto The Next Line.
+<<wait 2.0>>
+<<play Audio GeorgePhoneReverb>>
 <<enable Phone>>
-<<next_choice Phone Intrologue>>
-<<wait 10.0>>
-<<play Audio GeorgePhoneEdit>>
-<<wait 20.0>>
-<<play Audio GeorgePhoneEdit>>
+<<next_choice Phone Prologue>>
 <<wait 5.0>>
+<<play Audio GeorgePhoneReverb>>
+<<wait 5.0>>
+<<play Audio GeorgePhoneReverb>>
+<<wait 10.0>>
 You should probably click on the phone.
 ===
 
-title: Intrologue
+title: Prologue
 ---
+<<close curtains>>
 <<disable Phone>>
 //<<auto DialogueSystem false>>
 Hey! Long time no see!
@@ -30,7 +33,9 @@ But apparently that's just me!
 Being the strapping individual you are, we got a LOT of interested parties. 
 The only issue is, I'm not qualified to tell if they're really Shakespeare fans or not. 
 Only you can do that part!
+So listen to the tone of their voice.
 If anything about your suitors seems off, all you gotta do is point it out.
+Their delivery is key.
 I'll handle the rest.
 Good luck buddy!
 Oh, and I know it's hard not to think of Liza in these times, 
@@ -43,16 +48,29 @@ title: Mono_One
 ---
 //<<auto DialogueSystem true>>
 <<close Curtains>>
+<<open Curtains>>
+Listen with your gut. You'll know when something's off. 
+Press Spacebar To Move Onto The Next Line
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_One>>
 //<<wait 2.0>>
 <<play Audio Sam1_Outside_Auditorium>>
-"Tomorrow, and tomorrow, and tomorrow."
+"She should have died hereafter.
+There would have been a time for such a word.
+Tomorrow, and tomorrow, and tomorrow,
+Creeps in this petty pace from day to day,
+To the last syllable of recorded time;
+And all our yesterdays have lighted fools
+The way to dusty death. Out, out, brief candle!
+Life's but a walking shadow, a poor player,
+That struts and frets his hour upon the stage,
+And then is heard no more. It is a tale
+Told by an idiot, full of sound and fury,
+Signifying nothing."
 //<<wait 29.609>>
 <<stop Audio Sam1_Outside_Auditorium>>
 //<<change_sprite SuitorSprite CharacterOne>>
-<<open Curtains>>
 <<next_choice Phone Choice_One>>
 <<enable Curtains>>
 <<jump Phone_D1>>
@@ -66,6 +84,7 @@ title: Choice_One
     I thought so too! But it's too soon to stop here. I'll send the next one out. 
 -> Fake.
     Huh, really? Well shows what I know! But don't get disappointed, there's still more to come! We'll find your thespian bride yet!
+<<close Curtains>>
 <<jump Mono_Two>>
 ===
 
@@ -73,7 +92,7 @@ title: Phone_D1
 ---
 <<disable Phone>>
 //<<auto DialogueSystem false>>
-<<wait 2.0>>
+//<<wait 2.0>>
 The Scottish play, huh? A bit sullen for a date if you ask me, but I think he played it well!
 Wasn't Liza in a production once? 
 She would've made a great Lady Macbeth.
@@ -85,17 +104,30 @@ Let me know what you thought!
 title: Mono_Two
 ---
 //<<auto DialogueSystem true>>
-<<next_monologue Curtains Mono_Two>>
 <<close Curtains>>
+<<open Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
+<<next_monologue Curtains Mono_Two>>
 //<<wait 2.0>>
 <<play Audio Bernice2_Outside_Auditorium_TheyPreished>>
-"O, I have suffered."
+"If by your art, my dearest father, you have
+put the wild waters in this roar, allay them.
+The sky, it seems, would pour down stinking pitch
+But that the sea, mounting to th’ welkin’s cheek,
+Dashes the fire out. O, I have suffered
+with those that I saw suffer – a brave vessel
+Who had no doubt some noble creature in her,
+Dashed all to pieces. O, the cry did knock
+against my very heart! Poor souls, they perished.
+Had I been any god of power, I would
+have sunk the sea within the earth or ere
+It should the good ship so have swallowed and
+the fraughting souls within her."
 //<<wait 32.504>>
 <<stop Audio Bernice2_Outside_Auditorium_TheyPreished>>
 //<<change_sprite SuitorSprite CharacterTwo>>
-<<open Curtains>>
+//<<close Curtains>>
 <<next_choice Phone Choice_Two>>
 <<enable Curtains>>
 <<jump Phone_D2>>
@@ -109,6 +141,7 @@ title: Choice_Two
     Right!? It's hard to find that same raw talent in someone new, but she's got promise! But before you make your decision, I've got a few more for you to meet. Ready?
 -> Fake.
     Oh, that's too bad. She's no Liza but I thought she was pretty good! But don't worry, the search isn't over. Ready for the next one? 
+<<close Curtains>>
 <<jump Mono_Three>>
 ===
 
@@ -125,59 +158,153 @@ Watcha think?
 title: Mono_Three
 ---
 //<<auto DialogueSystem true>>
-<<next_monologue Curtains Mono_Three>>
 <<close Curtains>>
+<<open Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
+<<next_monologue Curtains Mono_Three>>
 //<<wait 2.0>>
 <<play Audio YanranAnna_Radio_WarmVoicewav>>
-"if you pardon, we will mend..."
 //<<wait 23.030>>
 <<stop Audio YanranAnna_Radio_WarmVoicewav>>
 //<<wait 2.803>>
 <<play Audio MendRepeatingQuiet>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
-<<open Curtains>>
-<<wait 2.0>> 
+<<close Curtains>>
+//<<wait 2.0>> 
 O, that this too too solid flesh would melt
-<<wait 0.5>>
+//<<wait 0.5>>
 Thaw and resolve itself into a dew!
-<<wait 0.5>>
+//<<wait 0.5>>
 Or that the Everlasting had not fix’d
-<<wait 0.5>>
+//<<wait 0.5>>
 His canon ‘gainst self-slaughter!
-<<wait 0.5>>
+//<<wait 0.5>>
 O God!
-<<wait 1.0>>
+//<<wait 1.0>>
 God!
-<<wait 2.0>>
-<<enable Curtains>>
-<<next_choice Phone Choice_Three>>
+//<<wait 2.0>>
+//<<enable Curtains>>
+//<<next_choice Phone Choice_Three>>
 <<jump Phone_D3>>
 ===
 
-title: Choice_Three
----
+
+//title: Choice_Three
+//---
 //<<auto DialogueSystem true>>
-<<disable Phone>>
+//<<disable Phone>>
 //<<auto DialogueSystem false>>
--> Real.
-    Glad you thought so! Ready for the next one? 
--> Fake.
-    I'm sorry to hear that. But let it get to you, we've got a few more stars to meet! I have a good feeling about this next one.
-<<jump Mono_Four>>
-===
+//-> Real.
+//    Glad you thought so! Ready for the next one? 
+//-> Fake.
+//    I'm sorry to hear that. But let it get to you, we've got a few more stars to meet! I have a good feeling about this next one.
+//<<jump Mono_Four>>
+//===
+
 
 title: Phone_D3
 ---
 //<<auto DialogueSystem true>>
+<<open Curtains>>
 <<disable Phone>>
-<<wait 2.0>>
+//<<wait 2.0>>
 Hey, buddy.
-<<wait 1.0>>
+//<<wait 1.0>>
 You there? I lost you for a second.
 There was some sort of static over the phone, 
 so I didn't quite catch the end there. 
-I'll leave this one up to you. 
+Let's just move on to the next one. 
+//<<enable Phone>>
+<<jump Mono_Four>>
+===
+
+title: Mono_Four
+---
+//<<auto DialogueSystem true>>
+<<close Curtains>>
+<<open Curtains>>
+<<disable Curtains>>
+<<disable Phone>>
+<<next_monologue Curtains Mono_Four>>
+//<<wait 2.0>>
+<<play Audio JasonClip>>
+"I’ll attend her here,
+And woo her with some spirit when she comes.
+Say that she rail; why, then I’ll tell her plain
+She sings as sweetly as a nightingale.
+Say that she frown; I’ll say she looks as clear
+As morning roses newly wash’d with dew.
+Say she be mute, and will not speak a word;
+Then I’ll commend her volubility,
+And say she uttereth piercing eloquence.
+If she do bid me pack, I’ll give her thanks,
+As though she bid me stay by her a week;
+If she deny to wed, I’ll crave the day
+When I shall ask the banns, and when be married."
+//<<wait 32.504>>
+<<stop Audio JasonClip>>
+//<<change_sprite SuitorSprite CharacterFour>>
+//<<close Curtains>>
+<<next_choice Phone Choice_Four>>
+<<enable Curtains>>
+<<jump Phone_D4>>
+===
+
+
+title: Choice_Four
+---
+<<disable Phone>>
+//<<auto DialogueSystem false>>
+-> Real.
+    Great choice! I'm glad you're starting to put your heart into it! Onto the next!
+-> Real 
+    Great choice! I'm glad you're starting to put your heart into it! Onto the next!
+<<close Curtains>>
+<<jump Mono_Five>>
+===
+
+title: Phone_D4
+---
+//<<auto DialogueSystem true>>
+<<disable Phone>>
+//<<auto DialogueSystem false>>
+What a fantastic Petruchio! 
+I mean, seriously, I've never heard better! 
+Wouldn't you agree?
 <<enable Phone>>
 ===
+
+title: Mono_Five
+---
+//<<auto DialogueSystem true>>
+<<close Curtains>>
+<<open Curtains>>
+<<disable Curtains>>
+<<disable Phone>>
+<<next_monologue Curtains Mono_Three>>
+//<<wait 2.0>>
+<<play Audio ShelbyGhost>>
+//<<wait 23.030>>
+<<stop Audio ShelbyGhost>>
+//<<wait 2.803>>
+//<<change_sprite SuitorSprite InvisibleSprite>>
+<<close Curtains>>
+//<<wait 2.0>> 
+How weary, stale, flat and unprofitable,
+//<<wait 0.5>>
+Seem to me all the uses of this world!
+//<<wait 0.5>>
+Fie on’t! ah fie! ’tis an unweeded garden,
+//<<wait 0.5>>
+That grows to seed; things rank and gross in nature
+//<<wait 0.5>>
+Possess it merely. 
+//<<wait 1.0>>
+That it should come to this!
+//<<wait 2.0>>
+//<<enable Curtains>>
+//<<next_choice Phone Choice_Three>>
+<<jump Phone_D5>>
+===
+
