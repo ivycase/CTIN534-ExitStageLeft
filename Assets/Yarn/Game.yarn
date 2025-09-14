@@ -3,23 +3,22 @@
 //<<auto DialogueSystem true>>
 <<close Curtains>>
 <<open Curtains>>
-<<play Audio CricketsLoopedPropely>>
-Press Spacebar To Move Onto The Next Line.
-<<wait 2.0>>
-<<play Audio GeorgePhoneReverb>>
+Press Spacebar To Move Onto The Next Line. 
+You may begin when ready...
+<<wait  2.0>>
+<<play Audio GeorgePhoneFinalEdit>>
 <<enable Phone>>
 <<next_choice Phone Prologue>>
 <<wait 5.0>>
-<<play Audio GeorgePhoneReverb>>
-<<wait 5.0>>
-<<play Audio GeorgePhoneReverb>>
+<<play Audio GeorgePhoneFinalEdit>>
 <<wait 10.0>>
+<<play Audio GeorgePhoneFinalEdit>>
+<<wait 15.0>>
 You should probably click on the phone.
 ===
 
 title: Prologue
 ---
-<<close curtains>>
 <<disable Phone>>
 //<<auto DialogueSystem false>>
 Hey! Long time no see!
@@ -48,9 +47,9 @@ title: Mono_One
 ---
 //<<auto DialogueSystem true>>
 <<close Curtains>>
-<<open Curtains>>
 Listen with your gut. You'll know when something's off. 
-Press Spacebar To Move Onto The Next Line
+Press Spacebar To Follow Along. 
+<<open Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_One>>
@@ -81,9 +80,13 @@ title: Choice_One
 <<disable Phone>>
 //<<auto DialogueSystem false>>
 -> Real.
-    I thought so too! But it's too soon to stop here. I'll send the next one out. 
+    I thought so too! But it's too soon to stop here. 
+    I'll send the next one out. 
 -> Fake.
-    Huh, really? Well shows what I know! But don't get disappointed, there's still more to come! We'll find your thespian bride yet!
+    Huh, really? 
+    Well shows what I know! 
+    But don't get disappointed, there's still more to come! 
+    We'll find your thespian bride yet!
 <<close Curtains>>
 <<jump Mono_Two>>
 ===
@@ -93,7 +96,8 @@ title: Phone_D1
 <<disable Phone>>
 //<<auto DialogueSystem false>>
 //<<wait 2.0>>
-The Scottish play, huh? A bit sullen for a date if you ask me, but I think he played it well!
+The Scottish play, huh? 
+A bit sullen for a date if you ask me, but I think he played it well!
 Wasn't Liza in a production once? 
 She would've made a great Lady Macbeth.
 Anyway...
@@ -105,6 +109,7 @@ title: Mono_Two
 ---
 //<<auto DialogueSystem true>>
 <<close Curtains>>
+Press Spacebar To Follow Along.
 <<open Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
@@ -119,11 +124,9 @@ Dashes the fire out. O, I have suffered
 with those that I saw suffer – a brave vessel
 Who had no doubt some noble creature in her,
 Dashed all to pieces. O, the cry did knock
-against my very heart! Poor souls, they perished.
-Had I been any god of power, I would
-have sunk the sea within the earth or ere
-It should the good ship so have swallowed and
-the fraughting souls within her."
+against my very heart! 
+Poor souls, 
+they perished."
 //<<wait 32.504>>
 <<stop Audio Bernice2_Outside_Auditorium_TheyPreished>>
 //<<change_sprite SuitorSprite CharacterTwo>>
@@ -138,9 +141,13 @@ title: Choice_Two
 <<disable Phone>>
 //<<auto DialogueSystem false>>
 -> Real.
-    Right!? It's hard to find that same raw talent in someone new, but she's got promise! But before you make your decision, I've got a few more for you to meet. Ready?
+    Right!? It's hard to find that same raw talent that you're used to in someone new, but she's got promise! 
+    But before you make your decision, I've got a few more for you to meet. 
+    Ready?
 -> Fake.
-    Oh, that's too bad. She's no Liza but I thought she was pretty good! But don't worry, the search isn't over. Ready for the next one? 
+    Oh, that's too bad. She's no Liza but I thought she was pretty good! 
+    But don't you fret, the search isn't over yet. 
+    Stage hands, bring out the next one! 
 <<close Curtains>>
 <<jump Mono_Three>>
 ===
@@ -150,7 +157,8 @@ title: Phone_D2
 //<<auto DialogueSystem true>>
 <<disable Phone>>
 //<<auto DialogueSystem false>>
-A bit uppity, but I've heard worse Mirandas. I'd give her a pass.
+A bit uppity, but I've heard worse Mirandas. 
+I'd give her a pass.
 Watcha think?
 <<enable Phone>>
 ===
@@ -159,6 +167,7 @@ title: Mono_Three
 ---
 //<<auto DialogueSystem true>>
 <<close Curtains>>
+Press Spacebar To Follow Along.
 <<open Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
@@ -166,6 +175,14 @@ title: Mono_Three
 //<<wait 2.0>>
 <<play Audio YanranAnna_Radio_WarmVoicewav>>
 //<<wait 23.030>>
+"If we shadows have offended,
+Think but this, and all is mended,
+That you have but slumber’d here
+While these visions did appear.
+And this weak and idle theme,
+No more yielding but a dream,
+Gentles, do not reprehend
+if you pardon, we will mend..."
 <<stop Audio YanranAnna_Radio_WarmVoicewav>>
 //<<wait 2.803>>
 <<play Audio MendRepeatingQuiet>>
@@ -215,6 +232,7 @@ You there? I lost you for a second.
 There was some sort of static over the phone, 
 so I didn't quite catch the end there. 
 Let's just move on to the next one. 
+<<close Curtains>>
 //<<enable Phone>>
 <<jump Mono_Four>>
 ===
@@ -223,6 +241,7 @@ title: Mono_Four
 ---
 //<<auto DialogueSystem true>>
 <<close Curtains>>
+Press Spacebar To Follow Along.
 <<open Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
@@ -257,9 +276,16 @@ title: Choice_Four
 <<disable Phone>>
 //<<auto DialogueSystem false>>
 -> Real.
-    Great choice! I'm glad you're starting to put your heart into it! Onto the next!
--> Real 
-    Great choice! I'm glad you're starting to put your heart into it! Onto the next!
+    Great choice! 
+    I'm glad you're starting to put your heart into it! 
+    They'll be waiting for you at the end.
+    Onto the next!
+-> Fake 
+    ...
+    No good, huh? 
+    You're a hard one to please, you know that? 
+    I almost feel sorry for them...
+    I do feel sorry for them. 
 <<close Curtains>>
 <<jump Mono_Five>>
 ===
@@ -279,6 +305,7 @@ title: Mono_Five
 ---
 //<<auto DialogueSystem true>>
 <<close Curtains>>
+Press Spacebar To Follow Along.
 <<open Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
@@ -286,7 +313,6 @@ title: Mono_Five
 //<<wait 2.0>>
 <<play Audio ShelbyGhost>>
 //<<wait 23.030>>
-<<stop Audio ShelbyGhost>>
 //<<wait 2.803>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
 <<close Curtains>>
@@ -302,9 +328,25 @@ That grows to seed; things rank and gross in nature
 Possess it merely. 
 //<<wait 1.0>>
 That it should come to this!
+<<stop Audio ShelbyGhost>>
 //<<wait 2.0>>
 //<<enable Curtains>>
 //<<next_choice Phone Choice_Three>>
 <<jump Phone_D5>>
 ===
 
+title: Phone_D5
+---
+<<open Curtains>>
+//<<auto DialogueSystem true>>
+<<disable Phone>>
+//<<auto DialogueSystem false>>
+<<wait  2.0>>
+<<play Audio GeorgePhoneFinalEdit>>
+<<enable Phone>>
+...
+...
+...
+Hey, buddy! 
+
+===
