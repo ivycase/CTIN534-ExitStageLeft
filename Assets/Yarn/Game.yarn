@@ -1,7 +1,7 @@
 ﻿title: Game
 ---
 //<<auto DialogueSystem true>>
-<<close Curtains>>
+//<<close Curtains>>
 <<open Curtains>>
 Press Spacebar To Move Onto The Next Line. 
 You may begin when ready...
@@ -46,14 +46,14 @@ Trust me.
 title: Mono_One
 ---
 //<<auto DialogueSystem true>>
-<<close Curtains>>
 Listen with your gut. You'll know when something's off. 
 Press Spacebar To Follow Along. 
-<<open Curtains>>
+<<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_One>>
-//<<wait 2.0>>
+<<wait 0.5>>
+<<swap_presenter DialogueSystem>>
 <<play Audio Sam1_Outside_Auditorium>>
 "She should have died hereafter.
 There would have been a time for such a word.
@@ -69,6 +69,7 @@ Told by an idiot, full of sound and fury,
 Signifying nothing."
 //<<wait 29.609>>
 <<stop Audio Sam1_Outside_Auditorium>>
+<<swap_presenter DialogueSystem>>
 //<<change_sprite SuitorSprite CharacterOne>>
 <<next_choice Phone Choice_One>>
 <<enable Curtains>>
@@ -87,7 +88,6 @@ title: Choice_One
     Well shows what I know! 
     But don't get disappointed, there's still more to come! 
     We'll find your thespian bride yet!
-<<close Curtains>>
 <<jump Mono_Two>>
 ===
 
@@ -108,13 +108,13 @@ Let me know what you thought!
 title: Mono_Two
 ---
 //<<auto DialogueSystem true>>
-<<close Curtains>>
 Press Spacebar To Follow Along.
-<<open Curtains>>
+<<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Two>>
-//<<wait 2.0>>
+<<wait 0.5>>
+<<swap_presenter DialogueSystem>>
 <<play Audio Bernice2_Outside_Auditorium_TheyPreished>>
 "If by your art, my dearest father, you have
 put the wild waters in this roar, allay them.
@@ -129,6 +129,7 @@ Poor souls,
 they perished."
 //<<wait 32.504>>
 <<stop Audio Bernice2_Outside_Auditorium_TheyPreished>>
+<<swap_presenter DialogueSystem>>
 //<<change_sprite SuitorSprite CharacterTwo>>
 //<<close Curtains>>
 <<next_choice Phone Choice_Two>>
@@ -166,13 +167,13 @@ Watcha think?
 title: Mono_Three
 ---
 //<<auto DialogueSystem true>>
-<<close Curtains>>
 Press Spacebar To Follow Along.
-<<open Curtains>>
+<<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Three>>
-//<<wait 2.0>>
+<<wait 0.5>>
+<<swap_presenter DialogueSystem>>
 <<play Audio YanranAnna_Radio_WarmVoicewav>>
 //<<wait 23.030>>
 "If we shadows have offended,
@@ -184,6 +185,7 @@ No more yielding but a dream,
 Gentles, do not reprehend
 if you pardon, we will mend..."
 <<stop Audio YanranAnna_Radio_WarmVoicewav>>
+<<swap_presenter DialogueSystem>>
 //<<wait 2.803>>
 <<play Audio MendRepeatingQuiet>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
@@ -223,7 +225,6 @@ God!
 title: Phone_D3
 ---
 //<<auto DialogueSystem true>>
-<<open Curtains>>
 <<disable Phone>>
 //<<wait 2.0>>
 Hey, buddy.
@@ -232,7 +233,6 @@ You there? I lost you for a second.
 There was some sort of static over the phone, 
 so I didn't quite catch the end there. 
 Let's just move on to the next one. 
-<<close Curtains>>
 //<<enable Phone>>
 <<jump Mono_Four>>
 ===
@@ -240,13 +240,13 @@ Let's just move on to the next one.
 title: Mono_Four
 ---
 //<<auto DialogueSystem true>>
-<<close Curtains>>
 Press Spacebar To Follow Along.
-<<open Curtains>>
+<<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Four>>
-//<<wait 2.0>>
+<<wait 0.5>>
+<<swap_presenter DialogueSystem>>
 <<play Audio JasonClip>>
 "I’ll attend her here,
 And woo her with some spirit when she comes.
@@ -263,6 +263,7 @@ If she deny to wed, I’ll crave the day
 When I shall ask the banns, and when be married."
 //<<wait 32.504>>
 <<stop Audio JasonClip>>
+<<swap_presenter DialogueSystem>>
 //<<change_sprite SuitorSprite CharacterFour>>
 //<<close Curtains>>
 <<next_choice Phone Choice_Four>>
@@ -286,7 +287,6 @@ title: Choice_Four
     You're a hard one to please, you know that? 
     I almost feel sorry for them...
     I do feel sorry for them. 
-<<close Curtains>>
 <<jump Mono_Five>>
 ===
 
@@ -304,13 +304,13 @@ Wouldn't you agree?
 title: Mono_Five
 ---
 //<<auto DialogueSystem true>>
-<<close Curtains>>
 Press Spacebar To Follow Along.
-<<open Curtains>>
+<<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
+<<swap_presenter DialogueSystem>>
 <<next_monologue Curtains Mono_Three>>
-//<<wait 2.0>>
+<<wait 0.5>>
 <<play Audio ShelbyGhost>>
 //<<wait 23.030>>
 //<<wait 2.803>>
@@ -329,6 +329,7 @@ Possess it merely.
 //<<wait 1.0>>
 That it should come to this!
 <<stop Audio ShelbyGhost>>
+<<swap_presenter DialogueSystem>>
 //<<wait 2.0>>
 //<<enable Curtains>>
 //<<next_choice Phone Choice_Three>>
@@ -337,7 +338,6 @@ That it should come to this!
 
 title: Phone_D5
 ---
-<<open Curtains>>
 //<<auto DialogueSystem true>>
 <<disable Phone>>
 //<<auto DialogueSystem false>>
