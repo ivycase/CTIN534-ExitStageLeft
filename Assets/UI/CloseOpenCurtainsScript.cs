@@ -6,6 +6,7 @@ public class CloseOpenCurtainsScript : MonoBehaviour
 {
 
     public Animator curtainsAnimator;
+    public AudioSource closeSound;
 
     [YarnCommand("open")]
     public void OpenCurtains()
@@ -17,11 +18,13 @@ public class CloseOpenCurtainsScript : MonoBehaviour
     public void CloseCurtains()
     {
         curtainsAnimator.SetTrigger("close");
+        closeSound.Play();
     }
 
     [YarnCommand("transition")]
     public void TransCurtains()
     {
         curtainsAnimator.SetTrigger("transition");
+        closeSound.Play();
     }
 }

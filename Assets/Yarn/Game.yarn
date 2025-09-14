@@ -1,7 +1,7 @@
 ﻿title: Game
 ---
 //<<auto DialogueSystem true>>
-//<<close Curtains>>
+////<<close Curtains>>
 <<open Curtains>>
 Press Spacebar To Move Onto The Next Line. 
 You may begin when ready...
@@ -131,7 +131,7 @@ they perished."
 <<stop Audio Bernice2_Outside_Auditorium_TheyPreished>>
 <<swap_presenter DialogueSystem>>
 //<<change_sprite SuitorSprite CharacterTwo>>
-//<<close Curtains>>
+////<<close Curtains>>
 <<next_choice Phone Choice_Two>>
 <<enable Curtains>>
 <<jump Phone_D2>>
@@ -149,7 +149,7 @@ title: Choice_Two
     Oh, that's too bad. She's no Liza but I thought she was pretty good! 
     But don't you fret, the search isn't over yet. 
     Stage hands, bring out the next one! 
-<<close Curtains>>
+//<<close Curtains>>
 <<jump Mono_Three>>
 ===
 
@@ -189,7 +189,7 @@ if you pardon, we will mend..."
 //<<wait 2.803>>
 <<play Audio MendRepeatingQuiet>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
-<<close Curtains>>
+//<<close Curtains>>
 //<<wait 2.0>> 
 O, that this too too solid flesh would melt
 //<<wait 0.5>>
@@ -265,7 +265,7 @@ When I shall ask the banns, and when be married."
 <<stop Audio JasonClip>>
 <<swap_presenter DialogueSystem>>
 //<<change_sprite SuitorSprite CharacterFour>>
-//<<close Curtains>>
+////<<close Curtains>>
 <<next_choice Phone Choice_Four>>
 <<enable Curtains>>
 <<jump Phone_D4>>
@@ -315,7 +315,7 @@ Press Spacebar To Follow Along.
 //<<wait 23.030>>
 //<<wait 2.803>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
-<<close Curtains>>
+//<<close Curtains>>
 //<<wait 2.0>> 
 How weary, stale, flat and unprofitable,
 //<<wait 0.5>>
