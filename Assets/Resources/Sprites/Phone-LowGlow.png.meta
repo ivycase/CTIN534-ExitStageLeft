@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 2946f275f284690459754b6fab8856b6
+guid: 366a6f1e7238c94459e441cfa1ef75bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3599114621942088101
-    second: Curtains-Closing1_0
-  - first:
-      213: 6694612556590579468
-    second: Curtains-Closing1_1
+      213: 7091000247451601313
+    second: Phone-LowGlow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Curtains-Closing1_0
+      name: Phone-LowGlow_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 810
         y: 0
-        width: 664
-        height: 960
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5e3a3df1506d0ec0800000000000000
-      internalID: -3599114621942088101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Curtains-Closing1_1
-      rect:
-        serializedVersion: 2
-        x: 664
-        y: 0
-        width: 616
-        height: 960
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0f737096aa08ec50800000000000000
-      internalID: 6694612556590579468
+      spriteID: 1a94f83c72b486260800000000000000
+      internalID: 7091000247451601313
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Curtains-Closing1_0: -3599114621942088101
-      Curtains-Closing1_1: 6694612556590579468
+      Phone-LowGlow_0: 7091000247451601313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 744e8f2fb1cadbc4c8eb7afedc933fd2
+guid: a17fa0e3231436b4bb528db9f86e41f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -692078636420456154
-    second: Street_0
+      213: -1139131574781796433
+    second: Curtains-Closing2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Street_0
+      name: Curtains-Closing2_0
       rect:
         serializedVersion: 2
-        x: 241
-        y: 80
-        width: 827
-        height: 590
+        x: 0
+        y: 0
+        width: 1280
+        height: 960
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 621a58f952e3566f0800000000000000
-      internalID: -692078636420456154
+      spriteID: faf13bc3eddf030f0800000000000000
+      internalID: -1139131574781796433
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Street_0: -692078636420456154
+      Curtains-Closing2_0: -1139131574781796433
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e68c8436bd3e2d340bb8989d8da1b22d
+guid: 744e8f2fb1cadbc4c8eb7afedc933fd2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4886234507480013694
-    second: Sky-Crescent_0
+      213: -692078636420456154
+    second: Street_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sky-Crescent_0
+      name: Street_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 960
+        x: 241
+        y: 80
+        width: 827
+        height: 590
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 284e5649a9b903cb0800000000000000
-      internalID: -4886234507480013694
+      spriteID: 621a58f952e3566f0800000000000000
+      internalID: -692078636420456154
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sky-Crescent_0: -4886234507480013694
+      Street_0: -692078636420456154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

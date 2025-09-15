@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0a9db79afc3352247ac3de46b5a31f6e
+guid: e8901d537fe0ff64cbad8761e97faae7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8007955993944764034
-    second: Curtains-Shut_0
+      213: 4706248706931259215
+    second: Suitor6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Curtains-Shut_0
+      name: Suitor6_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 960
+        x: 510
+        y: 256
+        width: 259
+        height: 179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7156f393760ed090800000000000000
-      internalID: -8007955993944764034
+      spriteID: f477741a344ff4140800000000000000
+      internalID: 4706248706931259215
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Curtains-Shut_0: -8007955993944764034
+      Suitor6_0: 4706248706931259215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

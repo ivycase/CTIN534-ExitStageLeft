@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: fbfd5bd311fd7e64d8c1aaf0d17b89ab
+guid: 5790bbef519b5704ca637ef540776a93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5068770182552388074
-    second: Curtains-PulledBack_0
-  - first:
-      213: 6776888148424158496
-    second: Curtains-PulledBack_1
-  - first:
-      213: 2341652100045984227
-    second: Curtains-PulledBack_2
+      213: -5265899166097481580
+    second: Gertrude_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Curtains-PulledBack_0
+      name: Gertrude_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 616
-        height: 960
+        x: 510
+        y: 256
+        width: 259
+        height: 179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61e7fdcdf5c18a9b0800000000000000
-      internalID: -5068770182552388074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Curtains-PulledBack_1
-      rect:
-        serializedVersion: 2
-        x: 589
-        y: 597
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02d60619dd75c0e50800000000000000
-      internalID: 6776888148424158496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Curtains-PulledBack_2
-      rect:
-        serializedVersion: 2
-        x: 615
-        y: 0
-        width: 665
-        height: 960
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e1d9caad283f7020800000000000000
-      internalID: 2341652100045984227
+      spriteID: 490ebbdbb94cbe6b0800000000000000
+      internalID: -5265899166097481580
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Curtains-PulledBack_0: -5068770182552388074
-      Curtains-PulledBack_1: 6776888148424158496
-      Curtains-PulledBack_2: 2341652100045984227
+      Gertrude_0: -5265899166097481580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

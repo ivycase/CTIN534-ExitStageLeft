@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c6b1c804f011d874089cf3e03e246620
+guid: 1e01cab3884b1c947bed7c5eee8f6db7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6942801171278993060
-    second: Silhouette1_0
+      213: 8648170825104092263
+    second: Phone-HiGlow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Silhouette1_0
+      name: Phone-HiGlow_0
       rect:
         serializedVersion: 2
-        x: 436
-        y: 190
-        width: 445
-        height: 381
+        x: 802
+        y: 0
+        width: 318
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a6104871e8c95060800000000000000
-      internalID: 6942801171278993060
+      spriteID: 76ce933ab89740870800000000000000
+      internalID: 8648170825104092263
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Silhouette1_0: 6942801171278993060
+      Phone-HiGlow_0: 8648170825104092263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

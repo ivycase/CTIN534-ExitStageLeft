@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 366a6f1e7238c94459e441cfa1ef75bc
+guid: f0ba1f7bc6fb6b34e8a2505b888d96bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7091000247451601313
-    second: Phone-LowGlow_0
+      213: -2882928980755525396
+    second: Phone-NoGlow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Phone-LowGlow_0
+      name: Phone-NoGlow_0
       rect:
         serializedVersion: 2
-        x: 810
+        x: 586
         y: 0
-        width: 303
-        height: 250
+        width: 694
+        height: 476
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a94f83c72b486260800000000000000
-      internalID: 7091000247451601313
+      spriteID: ce0536dcd57cdf7d0800000000000000
+      internalID: -2882928980755525396
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Phone-LowGlow_0: 7091000247451601313
+      Phone-NoGlow_0: -2882928980755525396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

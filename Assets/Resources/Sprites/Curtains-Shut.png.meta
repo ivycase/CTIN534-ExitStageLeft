@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1e01cab3884b1c947bed7c5eee8f6db7
+guid: 0a9db79afc3352247ac3de46b5a31f6e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8648170825104092263
-    second: Phone-HiGlow_0
+      213: -8007955993944764034
+    second: Curtains-Shut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Phone-HiGlow_0
+      name: Curtains-Shut_0
       rect:
         serializedVersion: 2
-        x: 802
+        x: 0
         y: 0
-        width: 318
-        height: 262
+        width: 1280
+        height: 960
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76ce933ab89740870800000000000000
-      internalID: 8648170825104092263
+      spriteID: e7156f393760ed090800000000000000
+      internalID: -8007955993944764034
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Phone-HiGlow_0: 8648170825104092263
+      Curtains-Shut_0: -8007955993944764034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
