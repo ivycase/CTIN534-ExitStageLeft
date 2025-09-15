@@ -2,7 +2,10 @@
 ---
 //<<auto DialogueSystem true>>
 ////<<close Curtains>>
+<<disable Curtains>>
 <<disable Phone>>
+<<change_sprite Sky Sky-Full>>
+<<change_sprite Street Street-Day>> 
 <<open Curtains>>
 <<swap_presenter DialogueSystem>>
 Press Spacebar To Move Onto The Next Line. 
@@ -185,6 +188,8 @@ title: Mono_Three
 Press Spacebar To Follow Along.
 <<transition Curtains>>
 <<wait  0.5>>
+<<change_sprite Sky Sky-Gibbous>>
+<<change_sprite Street Street-Midday>> 
 <<change_sprite SuitorSprite Suitor7>>
 <<disable Curtains>>
 <<disable Phone>>
@@ -355,6 +360,8 @@ They love you all...
 //<<wait 2.0>> 
 <<transition Curtains>>
 <<wait 0.5>>
+<<change_sprite Sky Sky-Crescent>>
+<<change_sprite Street Street>> 
 <<change_sprite SuitorSprite Invisible>>
 How weary, stale, flat and unprofitable,
 //<<wait 0.5>>
