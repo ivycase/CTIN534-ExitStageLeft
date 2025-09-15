@@ -463,6 +463,7 @@ And I’ll no longer be a Capulet...
 //<<wait 32.504>>
 <<transition Curtains>>
 <<wait 0.5>>
+<<swap_color Light>>
 <<change_sprite SuitorSprite Invisible>>
 To be, or not to be, that is the question,
 Whether 'tis nobler in the mind to suffer
@@ -551,8 +552,9 @@ Choose carefully...
     Parting is such sweet sorrow.
 //<<auto DialogueSystem false>>
 <<transition Curtains>>
-<<swap_presenter DialogueSystem>>
 <<wait  0.5>>
+<<swap_color Light>>
+<<swap_presenter DialogueSystem>>
 THE END.
 <<swap_presenter DialogueSystem>>
 Thank you for playing...
