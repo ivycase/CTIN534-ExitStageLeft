@@ -3519,7 +3519,7 @@ GameObject:
   - component: {fileID: 2136265989}
   - component: {fileID: 2136265991}
   m_Layer: 0
-  m_Name: Suitor_Sprite
+  m_Name: SuitorSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
