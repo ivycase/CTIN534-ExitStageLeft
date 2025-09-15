@@ -3,17 +3,18 @@
 //<<auto DialogueSystem true>>
 ////<<close Curtains>>
 <<open Curtains>>
+<<swap_presenter DialogueSystem>>
 Press Spacebar To Move Onto The Next Line. 
 You may begin when ready...
-<<wait  2.0>>
+<<swap_presenter DialogueSystem>>
 <<play Audio GeorgePhoneFinalEdit>>
 <<enable Phone>>
 <<next_choice Phone Prologue>>
+<<wait 2.0>>
+<<play Audio GeorgePhoneFinalEdit>>
 <<wait 5.0>>
 <<play Audio GeorgePhoneFinalEdit>>
 <<wait 10.0>>
-<<play Audio GeorgePhoneFinalEdit>>
-<<wait 15.0>>
 You should probably click on the phone.
 ===
 
@@ -46,6 +47,7 @@ Trust me.
 title: Mono_One
 ---
 //<<auto DialogueSystem true>>
+<<swap_presenter DialogueSystem>>
 Listen with your gut. You'll know when something's off. 
 Press Spacebar To Follow Along. 
 <<transition Curtains>>
@@ -53,9 +55,8 @@ Press Spacebar To Follow Along.
 <<disable Phone>>
 <<next_monologue Curtains Mono_One>>
 <<wait 0.5>>
-<<swap_presenter DialogueSystem>>
 <<play Audio Sam1_Outside_Auditorium>>
-"She should have died hereafter.
+She should have died hereafter.
 There would have been a time for such a word.
 Tomorrow, and tomorrow, and tomorrow,
 Creeps in this petty pace from day to day,
@@ -66,7 +67,7 @@ Life's but a walking shadow, a poor player,
 That struts and frets his hour upon the stage,
 And then is heard no more. It is a tale
 Told by an idiot, full of sound and fury,
-Signifying nothing."
+Signifying nothing.
 //<<wait 29.609>>
 <<stop Audio Sam1_Outside_Auditorium>>
 <<swap_presenter DialogueSystem>>
@@ -108,15 +109,15 @@ Let me know what you thought!
 title: Mono_Two
 ---
 //<<auto DialogueSystem true>>
+<<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Two>>
 <<wait 0.5>>
-<<swap_presenter DialogueSystem>>
 <<play Audio Bernice2_Outside_Auditorium_TheyPreished>>
-"If by your art, my dearest father, you have
+If by your art, my dearest father, you have
 put the wild waters in this roar, allay them.
 The sky, it seems, would pour down stinking pitch
 But that the sea, mounting to th’ welkin’s cheek,
@@ -126,7 +127,7 @@ Who had no doubt some noble creature in her,
 Dashed all to pieces. O, the cry did knock
 against my very heart! 
 Poor souls, 
-they perished."
+they perished.
 //<<wait 32.504>>
 <<stop Audio Bernice2_Outside_Auditorium_TheyPreished>>
 <<swap_presenter DialogueSystem>>
@@ -167,30 +168,30 @@ Watcha think?
 title: Mono_Three
 ---
 //<<auto DialogueSystem true>>
+<<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Three>>
 <<wait 0.5>>
-<<swap_presenter DialogueSystem>>
 <<play Audio YanranAnna_Radio_WarmVoicewav>>
 //<<wait 23.030>>
-"If we shadows have offended,
+If we shadows have offended,
 Think but this, and all is mended,
 That you have but slumber’d here
 While these visions did appear.
 And this weak and idle theme,
 No more yielding but a dream,
 Gentles, do not reprehend
-if you pardon, we will mend..."
+if you pardon, we will mend...
 <<stop Audio YanranAnna_Radio_WarmVoicewav>>
-<<swap_presenter DialogueSystem>>
 //<<wait 2.803>>
 <<play Audio MendRepeatingQuiet>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
 //<<close Curtains>>
 //<<wait 2.0>> 
+<<transition Curtains>>
 O, that this too too solid flesh would melt
 //<<wait 0.5>>
 Thaw and resolve itself into a dew!
@@ -202,9 +203,11 @@ His canon ‘gainst self-slaughter!
 O God!
 //<<wait 1.0>>
 God!
+<<transition Curtains>>
 //<<wait 2.0>>
 //<<enable Curtains>>
 //<<next_choice Phone Choice_Three>>
+<<swap_presenter DialogueSystem>>
 <<jump Phone_D3>>
 ===
 
@@ -240,15 +243,15 @@ Let's just move on to the next one.
 title: Mono_Four
 ---
 //<<auto DialogueSystem true>>
+<<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Four>>
 <<wait 0.5>>
-<<swap_presenter DialogueSystem>>
-<<play Audio JasonClip>>
-"I’ll attend her here,
+<<play Audio JasonQuieter>>
+I’ll attend her here,
 And woo her with some spirit when she comes.
 Say that she rail; why, then I’ll tell her plain
 She sings as sweetly as a nightingale.
@@ -260,9 +263,9 @@ And say she uttereth piercing eloquence.
 If she do bid me pack, I’ll give her thanks,
 As though she bid me stay by her a week;
 If she deny to wed, I’ll crave the day
-When I shall ask the banns, and when be married."
+When I shall ask the banns, and when be married.
 //<<wait 32.504>>
-<<stop Audio JasonClip>>
+<<stop Audio JasonQuieter>>
 <<swap_presenter DialogueSystem>>
 //<<change_sprite SuitorSprite CharacterFour>>
 ////<<close Curtains>>
@@ -279,14 +282,15 @@ title: Choice_Four
 -> Real.
     Great choice! 
     I'm glad you're starting to put your heart into it! 
-    They'll be waiting for you at the end.
-    Onto the next!
--> Fake 
+    Just like Liza did in each of her auditions...
+    It's too bad that talent never left the room. 
+-> Fake. 
     ...
     No good, huh? 
     You're a hard one to please, you know that? 
     I almost feel sorry for them...
-    I do feel sorry for them. 
+    I do feel sorry for them.  
+    Like I felt sorry for Liza. 
 <<jump Mono_Five>>
 ===
 
@@ -304,19 +308,29 @@ Wouldn't you agree?
 title: Mono_Five
 ---
 //<<auto DialogueSystem true>>
+<<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
-<<swap_presenter DialogueSystem>>
-<<next_monologue Curtains Mono_Three>>
+<<next_monologue Curtains Mono_Five>>
 <<wait 0.5>>
-<<play Audio ShelbyGhost>>
+<<play Audio ShelbyGhost2>>
+Unhappy that I am, I cannot heave
+My heart into my mouth. I love your Majesty
+According to my bond; no more nor less.
+Good my lord,
+You have begot me, bred me, lov’d me; I
+Return those duties back as are right fit,
+Obey you, love you, and most honour you.
+Why have my sisters husbands, if they say
+They love you all...
 //<<wait 23.030>>
 //<<wait 2.803>>
 //<<change_sprite SuitorSprite InvisibleSprite>>
 //<<close Curtains>>
 //<<wait 2.0>> 
+<<transition Curtains>>
 How weary, stale, flat and unprofitable,
 //<<wait 0.5>>
 Seem to me all the uses of this world!
@@ -328,8 +342,10 @@ That grows to seed; things rank and gross in nature
 Possess it merely. 
 //<<wait 1.0>>
 That it should come to this!
-<<stop Audio ShelbyGhost>>
+<<transition Curtains>>
+<<stop Audio ShelbyGhost2>>
 <<swap_presenter DialogueSystem>>
+<<next_choice Phone Choice_Five>>
 //<<wait 2.0>>
 //<<enable Curtains>>
 //<<next_choice Phone Choice_Three>>
@@ -341,12 +357,132 @@ title: Phone_D5
 //<<auto DialogueSystem true>>
 <<disable Phone>>
 //<<auto DialogueSystem false>>
-<<wait  2.0>>
+<<wait 5.0>>
+<<play Audio GeorgePhoneFinalEdit>>
+<<wait 2.0>>
 <<play Audio GeorgePhoneFinalEdit>>
 <<enable Phone>>
+<<wait 5.0>>
+<<play Audio GeorgePhoneFinalEdit>>
+===
+
+title: Choice_Five
+---
+<<play Audio GeorgePhoneFinalEdit>>
+<<disable Phone>>
 ...
 ...
 ...
 Hey, buddy! 
+Long time no see!
+I know things haven't been the greatest since Liza...  you know...
+...but there's only so many fish in the sea, and fish that like Shakespeare? Even less!
+...
+...
+...
+On today's casting call we have two suitors, man and wife. 
+Only one suitor role remains for this production of "The Merchant of Venice."
+...
+...
+...
+Her "Prince" was fantastic, but it's a male role.
+The company would never go for it. 
+She doesn't want to play Juliet, she wants to be the star.
+...
+...
+...
+So?
+-> Real.
+    ...
+-> Fake.
+    ...
+NEXT!
+//<<auto DialogueSystem false>>
+<<jump Mono_Six>>
+===
 
+
+title: Mono_Six
+---
+//<<auto DialogueSystem true>>
+<<swap_presenter DialogueSystem>>
+Press Spacebar To Follow Along.
+<<transition Curtains>>
+<<disable Curtains>>
+<<disable Phone>>
+<<next_monologue Curtains Mono_Six>>
+<<wait 0.5>>
+<<play Audio ScarletCapulet3>>
+O Romeo, Romeo, wherefore art thou Romeo?
+Deny thy father and refuse thy name.
+Or if thou wilt not, be but sworn my love
+And I’ll no longer be a Capulet...
+//<<wait 32.504>>
+<<transition Curtains>>
+To be, or not to be, that is the question:
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of outrageous fortune,
+Or to take arms against a sea of troubles
+And by opposing end them. To die—to sleep,
+No more; and by a sleep to say we end
+The heart-ache and the thousand natural shocks
+That flesh is heir to: 'tis a consummation
+Devoutly to be wish'd.
+<<transition Curtains>>
+<<stop Audio ScarletCapulet3>>
+<<swap_presenter DialogueSystem>>
+//<<change_sprite SuitorSprite CharacterFour>>
+////<<close Curtains>>
+<<next_choice Phone Choice_Six>>
+<<enable Curtains>>
+<<jump Phone_D6>>
+===
+
+title: Phone_D6
+---
+//<<auto DialogueSystem true>>
+<<disable Phone>>
+//<<auto DialogueSystem false>>
+<<wait 10.0>>
+<<play Audio GeorgePhoneFinalEdit>>
+<<wait 5.0>>
+<<play Audio GeorgePhoneFinalEdit>>
+<<enable Phone>>
+<<wait 10.0>>
+<<play Audio GeorgePhoneFinalEdit>>
+===
+
+title: Choice_Six
+---
+<<play Audio GeorgePhoneFinalEdit>>
+<<disable Phone>>
+...
+...
+...
+Hey, buddy! 
+Long time no see!
+I know things haven't been the greatest since Liza...  you know...
+...but there's only so many fish in the sea, and fish that like Shakespeare? Even less!
+...
+...
+...
+On today's casting call we have two suitors, man and wife. 
+Only one suitor role remains for this production of "The Merchant of Venice."
+...
+...
+...
+Her "Prince" was fantastic, but it's a male role.
+The company would never go for it. 
+She doesn't want to play Juliet, she wants to be the star.
+...
+...
+...
+So?
+-> Real.
+    ...
+-> Fake.
+    ...
+NEXT!
+//<<auto DialogueSystem false>>
+<<>>
 ===
