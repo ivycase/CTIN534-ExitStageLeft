@@ -2,6 +2,7 @@
 ---
 //<<auto DialogueSystem true>>
 ////<<close Curtains>>
+<<disable Phone>>
 <<open Curtains>>
 <<swap_presenter DialogueSystem>>
 Press Spacebar To Move Onto The Next Line. 
@@ -51,6 +52,8 @@ title: Mono_One
 Listen with your gut. You'll know when something's off. 
 Press Spacebar To Follow Along. 
 <<transition Curtains>>
+<<wait  0.5>>
+<<change_sprite SuitorSprite Suitor4>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_One>>
@@ -87,7 +90,7 @@ title: Choice_One
 -> Fake.
     Huh, really? 
     Well shows what I know! 
-    But don't get disappointed, there's still more to come! 
+    But worry, there's still more to come! 
     We'll find your thespian bride yet!
 <<jump Mono_Two>>
 ===
@@ -112,6 +115,8 @@ title: Mono_Two
 <<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
+<<wait  0.5>>
+<<change_sprite SuitorSprite Suitor6>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Two>>
@@ -143,13 +148,18 @@ title: Choice_Two
 <<disable Phone>>
 //<<auto DialogueSystem false>>
 -> Real.
-    Right!? It's hard to find that same raw talent that you're used to in someone new, but she's got promise! 
-    But before you make your decision, I've got a few more for you to meet. 
+    Right!? 
+    It's hard to find that same raw talent 
+    that you're used to in someone new, but she's got promise! 
+    But let's not get too excited,
+    I've got a few more for you to meet. 
     Ready?
 -> Fake.
-    Oh, that's too bad. She's no Liza but I thought she was pretty good! 
-    But don't you fret, the search isn't over yet. 
-    Stage hands, bring out the next one! 
+    That's too bad. 
+    She's no Liza, but I thought she was pretty good! 
+    But you're the boss.
+    Stage hands... 
+    bring out the next! 
 //<<close Curtains>>
 <<jump Mono_Three>>
 ===
@@ -160,8 +170,9 @@ title: Phone_D2
 <<disable Phone>>
 //<<auto DialogueSystem false>>
 A bit uppity, but I've heard worse Mirandas. 
-I'd give her a pass.
-Watcha think?
+Her intonation was good!
+But... I'm no expert! 
+What did you think?
 <<enable Phone>>
 ===
 
@@ -171,6 +182,8 @@ title: Mono_Three
 <<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
+<<wait  0.5>>
+<<change_sprite SuitorSprite Suitor7>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Three>>
@@ -192,6 +205,8 @@ if you pardon, we will mend...
 //<<close Curtains>>
 //<<wait 2.0>> 
 <<transition Curtains>>
+<<wait  0.5>>
+<<change_sprite SuitorSprite Invisible>>
 O, that this too too solid flesh would melt
 //<<wait 0.5>>
 Thaw and resolve itself into a dew!
@@ -204,6 +219,7 @@ O God!
 //<<wait 1.0>>
 God!
 <<transition Curtains>>
+<<wait  0.5>>
 //<<wait 2.0>>
 //<<enable Curtains>>
 //<<next_choice Phone Choice_Three>>
@@ -234,7 +250,7 @@ Hey, buddy.
 //<<wait 1.0>>
 You there? I lost you for a second.
 There was some sort of static over the phone, 
-so I didn't quite catch the end there. 
+so I didn't quite catch the end there... 
 Let's just move on to the next one. 
 //<<enable Phone>>
 <<jump Mono_Four>>
@@ -246,6 +262,8 @@ title: Mono_Four
 <<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
+<<wait  0.5>>
+<<change_sprite SuitorSprite Suitor1>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Four>>
@@ -282,8 +300,8 @@ title: Choice_Four
 -> Real.
     Great choice! 
     I'm glad you're starting to put your heart into it! 
-    Just like Liza did in each of her auditions...
-    It's too bad that talent never left the room. 
+    Just like Liza did in each one of her auditions...
+    It's just too bad that talent never left the room. 
 -> Fake. 
     ...
     No good, huh? 
@@ -311,6 +329,8 @@ title: Mono_Five
 <<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
+<<wait  0.5>>
+<<change_sprite SuitorSprite Suitor3>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Five>>
@@ -331,6 +351,8 @@ They love you all...
 //<<close Curtains>>
 //<<wait 2.0>> 
 <<transition Curtains>>
+<<wait 0.5>>
+<<change_sprite SuitorSprite Invisible>>
 How weary, stale, flat and unprofitable,
 //<<wait 0.5>>
 Seem to me all the uses of this world!
@@ -343,6 +365,7 @@ Possess it merely.
 //<<wait 1.0>>
 That it should come to this!
 <<transition Curtains>>
+<<wait  0.5>>
 <<stop Audio ShelbyGhost2>>
 <<swap_presenter DialogueSystem>>
 <<next_choice Phone Choice_Five>>
@@ -381,7 +404,8 @@ I know things haven't been the greatest since Liza...  you know...
 ...
 ...
 On today's casting call we have two suitors, man and wife. 
-Only one suitor role remains for this production of "The Merchant of Venice."
+Only one suitor role remains available 
+for this production of "The Merchant of Venice."
 ...
 ...
 ...
@@ -408,6 +432,8 @@ title: Mono_Six
 <<swap_presenter DialogueSystem>>
 Press Spacebar To Follow Along.
 <<transition Curtains>>
+<<wait 0.5>>
+<<change_sprite SuitorSprite Suitor2>>
 <<disable Curtains>>
 <<disable Phone>>
 <<next_monologue Curtains Mono_Six>>
@@ -419,6 +445,9 @@ Or if thou wilt not, be but sworn my love
 And I’ll no longer be a Capulet...
 //<<wait 32.504>>
 <<transition Curtains>>
+<<wait 0.5>>
+<<change_sprite SuitorSprite Invisible>>
+...
 To be, or not to be, that is the question:
 Whether 'tis nobler in the mind to suffer
 The slings and arrows of outrageous fortune,
@@ -429,6 +458,7 @@ The heart-ache and the thousand natural shocks
 That flesh is heir to: 'tis a consummation
 Devoutly to be wish'd.
 <<transition Curtains>>
+<<wait  0.5>>
 <<stop Audio ScarletCapulet3>>
 <<swap_presenter DialogueSystem>>
 //<<change_sprite SuitorSprite CharacterFour>>
@@ -442,8 +472,9 @@ title: Phone_D6
 ---
 //<<auto DialogueSystem true>>
 <<disable Phone>>
+<<disable Curtains>>
 //<<auto DialogueSystem false>>
-<<wait 10.0>>
+<<wait 7.5>>
 <<play Audio GeorgePhoneFinalEdit>>
 <<wait 5.0>>
 <<play Audio GeorgePhoneFinalEdit>>
@@ -459,30 +490,47 @@ title: Choice_Six
 ...
 ...
 ...
-Hey, buddy! 
-Long time no see!
-I know things haven't been the greatest since Liza...  you know...
-...but there's only so many fish in the sea, and fish that like Shakespeare? Even less!
+She should have died hereafter.
+There would have been a time for such a word.
+Tomorrow, and tomorrow, and tomorrow.
+Creeps in this petty pace from day to day,
+To the last syllable of recorded time;
 ...
+What a moving play. 
+The guilt and the heartache that Macbeth must have felt 
+when he uttered those words. 
 ...
+We become our characters a little bit 
+each time we wear their masks. 
+That's the mark of a true actor.
 ...
-On today's casting call we have two suitors, man and wife. 
-Only one suitor role remains for this production of "The Merchant of Venice."
-...
-...
-...
-Her "Prince" was fantastic, but it's a male role.
-The company would never go for it. 
-She doesn't want to play Juliet, she wants to be the star.
-...
-...
-...
-So?
+Don't you think?
 -> Real.
-    ...
+    Selfish
 -> Fake.
-    ...
-NEXT!
+    Deluded.
+Do you even remember what you did?
+How selfish you were in your quest for greatness.
+But you were justified...
+After all, the stage only accepts those who are worthy, right?
+-> Real.
+    Guilty.
+-> Fake.
+    Naive.
+But in the end, you still couldn't forget could you?
+Plagued by an eternal haunting...
+By time immemorial itself...
+So now, 
+you have a choice to make.
+Choose carefully:
+-> Live.
+    I'll be seeing you again. 
+-> Die.
+    I see. Then I bid you farewell, my
 //<<auto DialogueSystem false>>
-<<>>
+<<swap_presenter DialogueSystem>>
+THE END.
+<<swap_presenter DialogueSystem>>
+Thank you for playing...
+<<transition Curtains>>
 ===
