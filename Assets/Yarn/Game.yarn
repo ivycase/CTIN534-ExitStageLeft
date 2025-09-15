@@ -4,6 +4,7 @@
 ////<<close Curtains>>
 <<disable Curtains>>
 <<disable Phone>>
+<<change_sprite Noise Invisible>>
 <<change_sprite Sky Sky-Full>>
 <<change_sprite Street Street-Day>> 
 <<open Curtains>>
@@ -213,6 +214,7 @@ if you pardon, we will mend...
 //<<wait 2.0>> 
 <<transition Curtains>>
 <<wait  0.5>>
+<<change_sprite Noise Noise>> 
 <<change_sprite SuitorSprite Invisible>>
 O, that this too too solid flesh would melt
 //<<wait 0.5>>
@@ -227,6 +229,7 @@ O God!
 God!
 <<transition Curtains>>
 <<wait  0.5>>
+<<change_sprite Noise Invisible>> 
 //<<wait 2.0>>
 //<<enable Curtains>>
 //<<next_choice Phone Choice_Three>>
@@ -360,6 +363,7 @@ They love you all...
 //<<wait 2.0>> 
 <<transition Curtains>>
 <<wait 0.5>>
+<<change_sprite Noise Noise>> 
 <<change_sprite Sky Sky-Crescent>>
 <<change_sprite Street Street>> 
 <<change_sprite SuitorSprite Invisible>>
@@ -445,6 +449,7 @@ title: Mono_Six
 Press Spacebar To Follow Along.
 <<transition Curtains>>
 <<wait 0.5>>
+<<change_sprite Noise Invisible>>
 <<change_sprite SuitorSprite Suitor2>>
 <<disable Curtains>>
 <<disable Phone>>
@@ -471,6 +476,7 @@ Devoutly to be wish'd.
 <<transition Curtains>>
 <<wait  0.5>>
 <<stop Audio ScarletCapulet3>>
+<<change_sprite Noise Noise>>
 <<swap_presenter DialogueSystem>>
 //<<change_sprite SuitorSprite CharacterFour>>
 ////<<close Curtains>>
