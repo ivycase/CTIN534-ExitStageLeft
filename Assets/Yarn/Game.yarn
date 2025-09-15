@@ -385,7 +385,7 @@ title: Phone_D5
 <<wait 2.0>>
 <<play Audio GeorgePhoneFinalEdit>>
 <<enable Phone>>
-<<wait 5.0>>
+<<wait 10.0>>
 <<play Audio GeorgePhoneFinalEdit>>
 ===
 
@@ -447,15 +447,14 @@ And I’ll no longer be a Capulet...
 <<transition Curtains>>
 <<wait 0.5>>
 <<change_sprite SuitorSprite Invisible>>
-...
-To be, or not to be, that is the question:
+To be, or not to be, that is the question,
 Whether 'tis nobler in the mind to suffer
 The slings and arrows of outrageous fortune,
 Or to take arms against a sea of troubles
 And by opposing end them. To die—to sleep,
 No more; and by a sleep to say we end
 The heart-ache and the thousand natural shocks
-That flesh is heir to: 'tis a consummation
+That flesh is heir to; 'tis a consummation
 Devoutly to be wish'd.
 <<transition Curtains>>
 <<wait  0.5>>
@@ -522,15 +521,19 @@ Plagued by an eternal haunting...
 By time immemorial itself...
 So now, 
 you have a choice to make.
-Choose carefully:
+Choose carefully...
 -> Live.
-    I'll be seeing you again. 
+    Very well. 
+    "We shall meet again in France."
 -> Die.
-    I see. Then I bid you farewell, my
+    I see.
+    Farewell, my friend.
+    Parting is such sweet sorrow.
 //<<auto DialogueSystem false>>
+<<transition Curtains>>
 <<swap_presenter DialogueSystem>>
 THE END.
 <<swap_presenter DialogueSystem>>
 Thank you for playing...
-<<transition Curtains>>
+<<close Curtains>>
 ===
