@@ -85,10 +85,10 @@ title: Choice_One
 <<disable Curtains>>
 <<disable Phone>>
 //<<auto DialogueSystem false>>
--> Real.
+-> Real
     I thought so too! But it's too soon to stop here. 
     I'll send the next one out. 
--> Fake.
+-> Fake
     Huh, really? 
     Well shows what I know! 
     But worry, there's still more to come! 
@@ -149,14 +149,14 @@ title: Choice_Two
 <<disable Curtains>>
 <<disable Phone>>
 //<<auto DialogueSystem false>>
--> Real.
+-> Real
     Right!? 
     It's hard to find that same raw talent 
     that you're used to in someone new, but she's got promise! 
     But let's not get too excited,
     I've got a few more for you to meet. 
     Ready?
--> Fake.
+-> Fake
     That's too bad. 
     She's no Liza, but I thought she was pretty good! 
     But you're the boss.
@@ -235,9 +235,9 @@ God!
 //<<auto DialogueSystem true>>
 //<<disable Phone>>
 //<<auto DialogueSystem false>>
-//-> Real.
+//-> Real
 //    Glad you thought so! Ready for the next one? 
-//-> Fake.
+//-> Fake
 //    I'm sorry to hear that. But let it get to you, we've got a few more stars to meet! I have a good feeling about this next one.
 //<<jump Mono_Four>>
 //===
@@ -300,12 +300,12 @@ title: Choice_Four
 <<disable Curtains>>
 <<disable Phone>>
 //<<auto DialogueSystem false>>
--> Real.
+-> Real
     Great choice! 
     I'm glad you're starting to put your heart into it! 
     Just like Liza did in each one of her auditions...
     It's just too bad that talent never left the room. 
--> Fake. 
+-> Fake
     ...
     No good, huh? 
     You're a hard one to please, you know that? 
@@ -421,9 +421,9 @@ She doesn't want to play Juliet, she wants to be the star.
 ...
 ...
 So?
--> Real.
+-> Real
     ...
--> Fake.
+-> Fake
     ...
 NEXT!
 //<<auto DialogueSystem false>>
@@ -511,17 +511,17 @@ each time we wear their masks.
 That's the mark of a true actor.
 ...
 Don't you think?
--> Real.
+-> Real
     Selfish
--> Fake.
+-> Fake
     Deluded.
 Do you even remember what you did?
 How selfish you were in your quest for greatness.
 But you were justified...
 After all, the stage only accepts those who are worthy, right?
--> Real.
+-> Real
     Guilty.
--> Fake.
+-> Fake
     Naive.
 But in the end, you still couldn't forget could you?
 Plagued by an eternal haunting...
@@ -529,10 +529,10 @@ By time immemorial itself...
 So now, 
 you have a choice to make.
 Choose carefully...
--> Live.
+-> Live
     Very well. 
     "We shall meet again in France."
--> Die.
+-> Die
     I see.
     Farewell, my friend.
     Parting is such sweet sorrow.
