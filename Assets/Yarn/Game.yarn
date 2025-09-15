@@ -382,9 +382,10 @@ title: Phone_D5
 //<<auto DialogueSystem false>>
 <<wait 5.0>>
 <<play Audio GeorgePhoneFinalEdit>>
+<<wait  0.5>>
+<<enable Phone>>
 <<wait 2.0>>
 <<play Audio GeorgePhoneFinalEdit>>
-<<enable Phone>>
 <<wait 10.0>>
 <<play Audio GeorgePhoneFinalEdit>>
 ===
@@ -473,11 +474,12 @@ title: Phone_D6
 <<disable Phone>>
 <<disable Curtains>>
 //<<auto DialogueSystem false>>
-<<wait 7.5>>
+<<wait 10>>
 <<play Audio GeorgePhoneFinalEdit>>
+<<wait  0.5>>
+<<enable Phone>>
 <<wait 5.0>>
 <<play Audio GeorgePhoneFinalEdit>>
-<<enable Phone>>
 <<wait 10.0>>
 <<play Audio GeorgePhoneFinalEdit>>
 ===
@@ -532,6 +534,7 @@ Choose carefully...
 //<<auto DialogueSystem false>>
 <<transition Curtains>>
 <<swap_presenter DialogueSystem>>
+<<wait  0.5>>
 THE END.
 <<swap_presenter DialogueSystem>>
 Thank you for playing...
