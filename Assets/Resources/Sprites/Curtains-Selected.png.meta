@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 366a6f1e7238c94459e441cfa1ef75bc
+guid: 68b6a8b70979f8b4ba460f59a0d7a947
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7091000247451601313
-    second: Phone-LowGlow_0
+      213: -8266557368304622554
+    second: Curtains-Selected_0
+  - first:
+      213: 6149994529359940160
+    second: Curtains-Selected_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Phone-LowGlow_0
+      name: Curtains-Selected_0
       rect:
         serializedVersion: 2
-        x: 810
+        x: 0
         y: 0
-        width: 303
-        height: 250
+        width: 616
+        height: 960
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a94f83c72b486260800000000000000
-      internalID: 7091000247451601313
+      spriteID: 624a0d22fd9474d80800000000000000
+      internalID: -8266557368304622554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains-Selected_1
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 0
+        width: 665
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a481db07b295550800000000000000
+      internalID: 6149994529359940160
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Phone-LowGlow_0: 7091000247451601313
+      Curtains-Selected_0: -8266557368304622554
+      Curtains-Selected_1: 6149994529359940160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
